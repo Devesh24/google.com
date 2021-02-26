@@ -24,10 +24,25 @@
             color: black;
         }
         img{
-            padding-left: 400px;
+            width: 40%;
         }        
+        .img{
+            text-align: center;
+        }
         .input{
             text-align: center;
+        }
+        textarea{
+            width: 60%;
+            height: 30px;
+        }
+        @media screen and (max-width: 550px) {
+            textarea{
+                height: 20px;
+            }
+            img{
+                width: 50%;
+            }
         }
         .one a{
             padding: 30px;
@@ -60,9 +75,11 @@
             </p>
         </div>    
     </nav>
-    <img src="google2.0.0.jpg" alt="Google" width="40%">
+    <div class="img">
+        <img src="google2.0.0.jpg" alt="Google">
+    </div>
     <div class="input">
-        <textarea name="search" id="" cols="110" rows="2"></textarea>
+        <textarea name="search" id="text"></textarea>
         <br>
         <br>
         <input type="submit" value="Google Search">
